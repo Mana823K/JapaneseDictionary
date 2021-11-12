@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\dictionary.png" />
+    <None Remove="Resources\picture.png" />
+    <None Remove="Resources\translate.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IronOcr" Version="2021.6.0" />
+    <PackageReference Include="IronOcr.Languages.Japanese" Version="2020.11.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Diagnostics.Contracts" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\dictionary.png" />
+    <Resource Include="Resources\translate.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\picture.png" />
+  </ItemGroup>
+
+</Project>
