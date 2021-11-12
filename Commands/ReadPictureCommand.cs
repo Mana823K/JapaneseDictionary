@@ -42,7 +42,6 @@ namespace Dictionary.Commands
         public void Execute(object parameter)
         {
             string filePath = parameter.ToString();
-            IronOcr.Installation.LicenseKey = "IRONOCR.TÓTHALEXANDRA.614-B200231D73-DEQLURZQYT4BQVA-ALYGKIAKFEOT-6NEUVIGTUVJS-VW2P357342MO-7K6EQ3FS6NVN-VPFNNQ-TDA3RXUG2GSCUA-DEPLOYMENT.TRIAL-54DF4V.TRIAL.EXPIRES.09.NOV.2021";
             var Ocr = new IronTesseract();
             Mouse.OverrideCursor = Cursors.Wait;
 
